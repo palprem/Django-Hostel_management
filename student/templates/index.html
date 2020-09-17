@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>T.U.</title>
+
+	  <style>
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #212529;
+    text-align: left;
+<!--    background-color: #e9ecef;-->
+    color: #4a2c7d;
+}
+.row{
+margin-left: 15px;
+margin-top: 10px;
+
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-weight: 1000;
+    line-height: 1.2;
+}
+.h1, h1 {
+    font-size: 5rem;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin-left: 810px;
+}
+.row1{
+margin-left: 150px;
+margin-top: 10px;
+margin-right: 150px;
+
+}
+.btn-primary {
+    color: #f8f9fa;
+    background-color: #212d3a;
+    border-color: #ffc107;
+}
+.btn-group-lg>.btn, .btn-lg {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 3.5;
+    border-radius: .3rem;
+}
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 0rem;
+}
+	  </style>
+
+  </head>
+  <body>
+{% csrf_token %}
+
+{% load static %}
+
+<div class="card mb-3">
+  <img src="/static/papa.jpg" class="card-img-top" height="160" alt="...">
+  <div class="card-body">
+  </div>
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/index">Home <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           Hostel List
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/NMH">Nilachal Men`s Hostel</a>
+            <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="/KMH">KanchanJanga Men`s Hostel</a>
+          <div class="dropdown-divider"></div>
+
+        </div>
+      </li>
+<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbar Dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          All Student Detaile
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/nmhDetaile">Nilachal Men`s Hostel</a>
+            <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">KanchanJanga Men`s Hostel</a>
+          <div class="dropdown-divider"></div>
+        </div>
+      </li>
+
+<li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">About Us</a>
+      </li>
+    </ul>
+    <form action="/search/" method="post" class="form-inline my-2 my-lg-0">{%csrf_token%}
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+<a type="button"  href="/login" class="btn btn-danger">LOG OUT</a>
+</nav>
+
+<!--<head>-->
+<meta http -equiv="Content -Type" content="text/html; charset=utf -8" />
+<link href="/templatemo_style1.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="/jquerycssmenu.css" />
+
+
+<STYLE>
+
+.c_pink {
+	WIDTH: 10px; COLOR: black; TEXT -DECORATION: none
+}
+.c_pink:hover {
+	COLOR: #800000; BACKGROUND -COLOR: #ceff63; TEXT -DECORATION: none
+}
+.c_baize {
+	WIDTH: 10px; COLOR: black; TEXT -DECORATION: none
+}
+.c_baize:hover {
+	COLOR: #800000; BACKGROUND -COLOR: #fbdfa8; TEXT -DECORATION: none
+}
+.c_aqua {
+	WIDTH: 10px; COLOR: black; TEXT -DECORATION: none
+}
+.c_aqua:hover {
+	COLOR: #800000; BACKGROUND -COLOR: #a8fbfa; TEXT -DECORATION: none
+}
+.c_purple {
+	WIDTH: 145px; COLOR: black; TEXT -DECORATION: none
+}
+.c_purple:hover {
+	COLOR: #800000; BACKGROUND -COLOR: #edb8fa; TEXT -DECORATION: none
+}
+.c_light_green {
+	WIDTH: 145px; COLOR: black; TEXT -DECORATION: none
+}
+.c_light_green:hover {
+	COLOR: #800000; BACKGROUND -COLOR: #ceff63; TEXT -DECORATION: none
+}
+.c_yellow {
+	MARGIN -LEFT: 0px; COLOR: black; TEXT -DECORATION: none
+}
+.c_yellow:hover {
+	COLOR: #800000; BACKGROUND -COLOR: #bfc78c; TEXT -DECORATION: none
+}
+LI {
+	MARGIN -LEFT:0px
+}
+
+UL {
+	MARGIN -BOTTOM: 0px
+}
+
+LI.aqua {
+	COLOR: #22d2d0
+}
+LI.baize {
+	COLOR: #f9b955
+}
+LI.green {
+	COLOR: #81b309
+}
+#marqueecontainer {
+	BORDER -RIGHT: #91A098 2px solid; PADDING -RIGHT:3px; BORDER -TOP: #91A098 2px solid; PADDING -LEFT: 1px; PADDING -BOTTOM: 1px; OVERFLOW: hidden; BORDER -LEFT: #91A098 2px solid; WIDTH: 310px; PADDING -TOP: 1px; BORDER -BOTTOM: #91A098 2px solid; POSITION: relative; HEIGHT: 260px; BACKGROUND -COLOR: #EFEFEF
+}
+
+LI.red {
+	PADDING -RIGHT: 0px; PADDING -LEFT: 1px; PADDING -BOTTOM: 3px; COLOR: #353375; PADDING -TOP: 3px
+}
+SPAN {
+	COLOR: #000080
+}
+.upperscroll {
+	COLOR:#353375; TEXT -DECORATION: none
+}
+.upperscroll:hover {
+	COLOR:#353375; TEXT -DECORATION: none
+}
+</STYLE>
+<SCRIPT type=text/javascript>
+
+
+
+var delayb4scroll=7000 //Specify initial delay before marquee starts to scroll on page (2000=2 seconds)
+var marqueespeed=2 //Specify marquee scroll speed (larger is faster 1 -10)
+var pauseit=1 //Pause marquee onMousever (0=no. 1=yes)?
+
+////NO NEED TO EDIT BELOW THIS LINE////////////
+
+var copyspeed=marqueespeed
+var pausespeed=(pauseit==0)? copyspeed: 0
+var actualheight=''
+
+function scrollmarquee(){
+if (parseInt(cross_marquee.style.top)>(actualheight*( -1)+8))
+cross_marquee.style.top=parseInt(cross_marquee.style.top) -copyspeed+"px"
+else
+cross_marquee.style.top=parseInt(marqueeheight)+8+"px"
+}
+
+function initializemarquee()
+{
+cross_marquee=document.getElementById("vmarquee")
+
+cross_marquee.style.top=0
+
+marqueeheight=document.getElementById("marqueecontainer").offsetHeight
+
+
+actualheight=cross_marquee.offsetHeight
+
+if (window.opera || navigator.userAgent.indexOf("Netscape/7")!= -1){ //if Opera or Netscape 7x, add scrollbars to scroll and exit
+
+cross_marquee.style.height=marqueeheight+"px"
+
+cross_marquee.style.overflow="scroll"
+
+return
+}
+
+
+setTimeout('lefttime=setInterval("scrollmarquee()",90)', delayb4scroll)
+
+}
+
+
+if (window.addEventListener)
+
+window.addEventListener("load", initializemarquee, false)
+
+else if (window.attachEvent)
+
+window.attachEvent("onload", initializemarquee)
+
+else if (document.getElementById)
+
+window.onload=initializemarquee
+
+
+</SCRIPT>
+
+<center>
+<div id="templatemo_top_panel_wrapper_outter">
+<div id="templatemo_top_panel_wrapper_inner">
+	<div id="templatemo_top_panel">
+        <div id="templatemo_banner">
+	        <div id="site_title">
+
+			</div>
+        </div> <! - - end of templatemo_banner  - ->
+    </div>
+</div>
+</div>
+
+<div id="templatemo_content_wrapper">
+
+	<div id="templatemo_content">
+
+
+
+      <div id="templatemo_main_coontent">
+
+        <div id="main_column">
+
+            <div class="post_box">
+
+
+                <div class="post_body">
+ <table width="980" cellpadding="0" cellspacing="0"  bordercolor="#D2D2D2" border="1" bgcolor="#ffffff"><tr><td  valign="top" colspan="4" align="center" bgcolor="#D2D2D2"><br>&nbsp;<font size="4"  color="#36387C"><b>TEZPUR UNIVERSITY HOSTEL MANAGEMENT</b></font>   <p>&nbsp;&nbsp;&nbsp;      </p></td></tr>
+
+<tr>
+
+
+</td></tr>
+
+
+<tr>
+
+
+<td width="265" align="left">  </td>
+
+</td></tr>
+
+
+<tr><td colspan="4"><table><tr><td >
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="/static/The Gate Now.jpg" class="d-block w-80" height="400" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/static/tezpur-university-13.jpg" class="d-block w-80" height="400" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/static/TU3.jpg" class="d-block w-80" height="400" alt="...">
+    </div>
+  </div>
+</div>
+<!--    <img src="/static/PK1.jpg" width="648" >-->
+</td><td align="center"  bgcolor="#EFEFEF" valign="top" width="262"><a href=""><font color="#353375" size="4">
+    <b>Notices</b></font></a>
+
+
+    <p align="center"><DIV id=marqueecontainer onmouseover=copyspeed=pausespeed onmouseout=copyspeed=marqueespeed>
+<div id="carouselExample SlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="/static/pk5.jpg" class="d-block w-80" height="400" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/static/PK5.jpg" class="d-block w-80" height="400" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/static/PK5.jpg" class="d-block w-80" height="400" alt="...">
+    </div>
+  </div>
+</div>
+            <DIV id=vmarquee style="width: 250; position: absolute; left: 1; top: -1; height: 25">
+
+            <UL class=round>
+
+<LI class=red><p align="justify"><a href=""> <font color="#343676" size="2" face="Times New Roman">RESIDENTIAL ACCOMMODATION RULE
+
+</a>  |<a href="">Notice</a> |<a href="" target="_blank">Application Form</a>|<a href=""> <font color="#343676" size="2" face="Times New Roman">TEMPORARY ALLOTMENT</a> </font>
+<i><font color="red">New</font></i></p><hr></LI>
+
+
+<LI class=red><p align="justify"><a href="">
+	<font color="#343676" size="2" face="Times New Roman">Application Form for Allotment of Hostel/City Delegacy&nbsp; cum- Dossier Form (to be filled in triplicate by all students)</a>
+<i><font color="red">New</font></i></p><hr></LI>
+
+	<LI class=red><p align="justify"><a href=""><font color="#343676" size="2" face="Times New Roman">Application Form for Allotment of Hostel/City Delegacy - cum - Dossier Form  (to be filled in triplicate by all students) for 	MMV students (to be filled in triplicate by all students)</a>&nbsp;<a href="Forms/Dossier%20Form%20of%20%20MMV.doc">
+<i><font color="red">New</font></i></p><hr></LI>
+
+<LI class=red><p align="justify"><a href=""><font color="#343676" size="2" face="Times New Roman">Particular to be Filled by the Applicant&nbsp;</a>&nbsp;&nbsp;&nbsp;&nbsp;
+<i><font color="red">New</font></i></p><hr></LI>
+
+</p></LI>
+    </UL></DIV></DIV> 	</p>		</td></tr></table>
+
+</table>
+</table>
+              </div> <! - - end of post body  - ->
+
+            </div> <! - - end of a post  - ->
+        </div> <! - - end of main column  - ->
+     <div class="cleaner"></div>
+      </div> <! - - end of main content  - ->
+    </div> <! - - templatemo_content  - ->
+</div> <! - - end of templatemo_content_wrapper  - ->
+
+	<div class="cleaner"></div>
+</div> <! - - end of templatemo_footer_wrapper  - ->
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4"></h1>
+
+  </div>
+</div>
+
+    <button  class="btn btn-primary btn-lg btn-block">...</button>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+</center>
+  </body>
+</html>

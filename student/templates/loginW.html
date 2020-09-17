@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login Page</title>
+   <!--Made with love by Mutiullah Samim -->
+
+	<!--Bootsrap 4 CDN-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!--Fontawesome CDN-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!--Custom styles-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    {% load static %}
+	<style>
+        body{
+        background-color:var(--light);
+        line-height: 2.5;
+        line-height: 2.5;
+        }
+        .bg-dark{background-color: #5a5386 !important;
+    color: #868fb3;
+}
+element.style {
+    height: 150px;
+    margin-left: 42%;
+    margin-top: 3%;
+    width: 150px;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+.btn{
+background-color: var(--primary);
+    border: 1px solid var(--gray-dark);
+    }
+
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/login">Home Login<span class="sr-only">(current)</span></a>
+      </li>
+
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Login As
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/loginA">Administration</a>
+          <a class="dropdown-item" href="/loginW">Warden</a>
+          <a class="dropdown-item" href="/loginS">Student</a>
+          <a class="dropdown-item" href="#">Guest</a>
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</nav>
+
+<div class="container">
+    <img src="/static/NMH0.jpg" style="height:150px; margin-left: 42%; margin-top: 1%; width:150px; border-radius: 50%; opacity: 0.9;">
+	<div class="d-flex justify-content-center h-50">
+
+		<div class="card">
+                <h2 style="margin-top: 15px;">Warden Login..............</h2>
+			<div class="card-header">
+
+				<div class="d-flex justify-content-end social_icon">
+
+				</div>
+			</div>
+			<div class="card-body">
+                <form id="login_form" method="POST" action="/loginW/">
+                    {% csrf_token %}
+
+
+ <div class="form-group col-md-6 ">
+            <label>Hostel Name:</label>
+               <div style="position:relative;width:200px;height:25px;border:0;padding:0;margin:0;">
+                  <select name="name" style="position:absolute;top:0px;left:-20px;width:270px; height:35px;line-height:20px;margin:0;padding:0;"
+                          onchange="document.getElementById('displayValue').value=this.options[this.selectedIndex].text; document.getElementById('idValue').value=this.options[this.selectedIndex].value;">
+                    <option></option>
+                    <option value="PATKAI MEN'S HOSTEL">PATKAI MENS HOSTEL</option>
+                    <option value="NILACHAL MEN'S HOSTEL">NILACHAL MENS HOSTEL</option>
+                    <option value="KANCHENJUNGHA MEN'S HOSTEL">KANCHENJUNGHA MENS HOSTEL</option>
+                    <option value="CHARAIDEO MEN'S HOSTEL">CHARAIDEO MENS HOSTEL</option>
+                    <option value="CV RAMAN MEN'S HOSTEL">CV RAMAN MENS HOSTEL</option>
+                    <option value="TRANSIT MEN'S HOSTEL">TRANSIT MENS HOSTEL</option>
+                    <option value="TRANSIT WOMEN'S HOSTEL 1">TRANSIT WOMENS HOSTEL 1</option>
+                    <option value="TRANSIT WOMEN'S HOSTEL 2">TRANSIT WOMENS HOSTEL 2</option>
+                    <option value="TRANSIT WOMEN'S HOSTEL 3">TRANSIT WOMENS HOSTEL 3</option>
+                    <option value="KAPILI WOMEN'S HOSTEL">KAPILI WOMENS HOSTEL </option>
+                    <option value="DHANSIRI WOMEN'S HOSTEL">DHANSIRI WOMENS HOSTEL </option>
+                    <option value="SUBANSIRI WOMEN'S HOSTEL">SUBANIRI WOMENS HOSTEL </option>
+                    <option value="BORDOICILA WOMEN'S HOSTEL">BORDOICILA WOMENS HOSTEL</option>
+                    <option value="NEW WOMEN'S HOSTEL">NEW WOMENS HOSTEL</option>
+                    <option value="POBITORA WOMEN'S HOSTEL">POBITORA WOMENS HOSTEL</option>
+                    <option value="PRAGJYOTIKA WOMEN'S HOSTEL">PRAGJYOTIKA WOMENS HOSTEL</option>
+                  </select>
+
+            </div>
+        </div>
+
+<!--					    <div class="input-group form-group">-->
+
+<!--                            <input type="text" name="h_name" class="form-control" placeholder="H Name">-->
+
+<!--                        </div>-->
+                    <label>User Name:</label>
+					    <div class="input-group form-group">
+                            <input type="text" name="user_name" class="form-control" placeholder="username">
+                        </div>
+                          <label>Password:</label>
+                             <div class="input-group form-group">
+
+                            <input type="password" name="wpassword" class="form-control" placeholder="password">
+                            {% if messages %}
+                            <ul class="messages">
+                                {% for message in messages %}
+                                <font color="red"><li {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li></font>
+                                {% endfor %}
+                            </ul>
+                        {% endif %}
+                        </div>
+
+                        <div class="form-group text-center">
+                            <input type="submit"  value="Login" class="btn login_btn">
+                        </div>
+
+                    </div>
+
+				</form>
+			</div>
+
+
+		</div>
+	</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+</html>

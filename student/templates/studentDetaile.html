@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Add data!</title>
+    <style>
+
+      .btn-circle.btn-xl {
+            width: 70px;
+            height: 70px;
+            padding: 10px 16px;
+            border-radius: 35px;
+            font-size: 12px;
+            text-align: center;
+        }
+        .btn-outline-primary{
+             width: 70px;
+            height: 50px;
+            padding: 10px 16px;
+            border-radius: 35px;
+            font-size: 12px;
+            text-align: center;
+      }
+        .col-md-6{
+            padding: 12px 20px;
+            margin: 0px 0px;
+            box-sizing: border-box;
+
+    }
+
+    body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2;
+    color: rgba(0,0,0,.9);
+    text-align: center;
+background-color: #f8f9fa;
+}
+.bg-light {
+    background-color: #5a5386 !important;
+    color: #868fb3;
+}
+my-lg-0{
+   text-align: center;
+}
+.form-control {
+    display: block;
+    width: 85%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-row>.col, .form-row>[class*=col-] {
+    padding-right: 5px;
+    padding-left: 50px;
+
+}
+    </style>
+
+</head>
+
+<body>
+
+<script>
+
+</script>
+<nav class="navbar navbar-expand-lg navbar-dark bg-light">
+    <h1 class="navbar-brand" href="">NMH Insertion Page</h1>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/NMH">HOME <span
+                        class="sr-only">(current)</span></a>
+            </li>
+
+
+<!--                        <li class="nav-item active">-->
+<!--                <a class="nav-link" href="/nmhDetaile">ALL BORDER<span class="sr-only">(current)</span></a>-->
+<!--            </li>-->
+                        <li class="nav-item active">
+                <a class="nav-link" href="/nmhVacant">NMH VACANT<span class="sr-only">(current)</span></a>
+            </li>
+
+        </ul>
+        <form method="post" action="/search/" class="form-inline my-2 my-lg-0">{% csrf_token %}
+            <input class="form-control mr-sm-2" type="text" name="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+
+<form  method="POST" action="/studentDetaile/" >{%csrf_token%}
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Name:</label>
+            <input type="text" class="form-control" name="student_name" pattern="[A-Z a-z]{1,50}" placeholder="Name" title="Name should contain only letters upto 50" required>
+        </div>
+
+        <div class="form-group col-md-6 ">
+            <label>Roll No:</label>
+            <input type="text" class="form-control" name="enroll_no" placeholder="Roll No"
+                   required>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6 ">
+            <label>DOB:</label>
+            <input type="date" class="form-control" name="dob" placeholder="DB Yr" required>
+        </div>
+        <div class="form-group col-md-6 ">
+            <label>Admission Date:</label>
+            <input type="date" class="form-control" name="add_yr" placeholder="Admission Date"
+                   required>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6 ">
+            <label>Department Name:</label>
+            <div style="position:relative;width:200px;height:25px;border:0;padding:0;margin:0;">
+                  <select name="dept_name" style="position:absolute;top:0px;left:0px;width:520px; height:35px;line-height:20px;margin:0;padding:0;"
+                          onchange="document.getElementById('displayValue').value=this.options[this.selectedIndex].text; document.getElementById('idValue').value=this.options[this.selectedIndex].value;">
+                    <option></option>
+                    <option value="Department of Civil Engeering">Department of Civil Engeering</option>
+                    <option value="Department of Computer Science & Engeering">Department of Computer Science & Engeering</option>
+                    <option value="Department of Electronics and comm.Engeening">Department of Electronics and comm.Engeening</option>
+                    <option value="Department of Energy">Department of Energy</option>
+                    <option value="Department of Food Engineering and Technology">Department of Food Engineering and Technology</option>
+                    <option value="Department of Mechanical Engineering">Department of Mechanical Engineering</option>
+                    <option value="Department of Electrical Engineering">Department of Electrical Engineering</option>
+                    <option value="Department of Cultural Studies">Department of Cultural Studies</option>
+                    <option value="Department of English">Department of English</option>
+                    <option value="Department of Mass Comm.">Department of Mass Comm.</option>
+                    <option value="Department of Sociology">Department of Sociology</option>
+                    <option value="Department of Hindi">Department of Hindi</option>
+                    <option value="Department of Physics">Department of Physics</option>
+                    <option value="Department of Mathematics">Department of Mathematics</option>
+                    <option value="Department of Chemistry">Department of Chemistry</option>
+                    <option value="Department of Business Adminstration">Department of Business Adminstration</option>
+                  </select>
+<!--                  <input type="text" name="dept_name" id="displayValue"-->
+<!--                         placeholder="add/select a value" onfocus="this.select()"-->
+<!--                         style="position:absolute;top:0px;left:0px;width:500px;width:180px\9;#width:180px;height:23px; height:21px\9;#height:18px;border:1px solid #556;"  >-->
+<!--                  <input name="dept_name" >-->
+            </div>
+        </div>
+        <div class="form-group col-md-6 ">
+            <label>Programme:</label>
+            <input type="text" class="form-control" name="course" placeholder="Course"
+                   required>
+        </div>
+
+
+        <div class="form-group col-md-6 ">
+            <label>Hostel Name:</label>
+               <div style="position:relative;width:200px;height:25px;border:0;padding:0;margin:0;">
+                  <select name="hostel_name" style="position:absolute;top:0px;left:0px;width:520px; height:35px;line-height:20px;margin:0;padding:0;"
+                          onchange="document.getElementById('displayValue').value=this.options[this.selectedIndex].text; document.getElementById('idValue').value=this.options[this.selectedIndex].value;">
+                    <option></option>
+<!--                    <option value="PATKAI MEN'S HOSTEL">PATKAI MENS HOSTEL</option>-->
+                    <option value="NILACHAL MENS HOSTEL">NILACHAL MENS HOSTEL</option>
+<!--                    <option value="KANCHENJUNGHA MEN'S HOSTEL">KANCHENJUNGHA MENS HOSTEL</option>-->
+<!--                    <option value="CHARAIDEO MEN'S HOSTEL">CHARAIDEO MENS HOSTEL</option>-->
+<!--                    <option value="CV RAMAN MEN'S HOSTEL">CV RAMAN MENS HOSTEL</option>-->
+<!--                    <option value="TRANSIT MEN'S HOSTEL">TRANSIT MENS HOSTEL</option>-->
+<!--                    <option value="TRANSIT WOMEN'S HOSTEL 1">TRANSIT WOMENS HOSTEL 1</option>-->
+<!--                    <option value="TRANSIT WOMEN'S HOSTEL 2">TRANSIT WOMENS HOSTEL 2</option>-->
+<!--                    <option value="TRANSIT WOMEN'S HOSTEL 3">TRANSIT WOMENS HOSTEL 3</option>-->
+<!--                    <option value="KAPILI WOMEN'S HOSTEL">KAPILI WOMENS HOSTEL </option>-->
+<!--                    <option value="DHANSIRI WOMEN'S HOSTEL">DHANSIRI WOMENS HOSTEL </option>-->
+<!--                    <option value="SUBANSIRI WOMEN'S HOSTEL">SUBANIRI WOMENS HOSTEL </option>-->
+<!--                    <option value="BORDOICILA WOMEN'S HOSTEL">BORDOICILA WOMENS HOSTEL</option>-->
+<!--                    <option value="NEW WOMEN'S HOSTEL">NEW WOMENS HOSTEL</option>-->
+<!--                    <option value="POBITORA WOMEN'S HOSTEL">POBITORA WOMENS HOSTEL</option>-->
+<!--                    <option value="PRAGJYOTIKA WOMEN'S HOSTEL">PRAGJYOTIKA WOMENS HOSTEL</option>-->
+                  </select>
+
+            </div>
+        </div>
+
+        <div class="form-group col-md-6 ">
+            <label>Phone No:</label>
+            <input type="tel" class="form-control"  name="phone_no" placeholder="Contact Number"
+                   required>
+        </div>
+        <div class="form-group col-md-6 ">
+            <label>Email Id:</label>
+            <input type="email" class="form-control" name="email_id" placeholder="Email Id"
+                   required>
+        </div>
+        <div class="form-group col-md-6">
+            <label>Room No:</label>
+            <input type="number" class="form-control" name="room_no" placeholder="Room No"
+                   required>
+        </div>
+
+        <div class="form-group col-md-6">
+         <label>Gender:</label>
+            <div style="position:relative;width:200px;height:25px;border:0;padding:0;margin:0;">
+                  <select name="gender" style="position:absolute;top:0px;left:0px;width:520px; height:35px;line-height:20px;margin:0;padding:0;"
+                          onchange="document.getElementById('displayValue').value=this.options[this.selectedIndex].text; document.getElementById('idValue').value=this.options[this.selectedIndex].value;">
+                    <option></option>
+                    <option value="MALE">MALE</option>
+                    <option value="FEMALE">FEMALE</option>
+                    <option value="OTHER">OTHER</option>
+                  </select>
+<!--                  <input type="text" name="gender" id="displayValue"-->
+<!--                         placeholder="add/select a value" onfocus="this.select()"-->
+<!--                         style="position:absolute;top:0px;left:0px;width:500px;width:180px\9;#width:180px;height:23px; height:21px\9;#height:18px;border:1px solid #556;"  >-->
+<!--                  <input name="gender" >-->
+            </div>
+<!--              <input type="text" class="form-control" name="gender" placeholder="gender"-->
+<!--                   required>-->
+        </div>
+
+</div>
+
+    </div>
+<div class="section text-middile">
+
+    <button type="submit" class="btn btn-primary btn-bordered ph40">Allocate</button>
+                                    </div>
+</form>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

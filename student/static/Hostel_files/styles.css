@@ -1,0 +1,542 @@
+﻿
+body {
+	font: 80%/1.5em "Myriad Pro",Trebuchet MS, Arial, Helvetica, sans-serif;
+color:#444	
+	margin: 0;
+	padding: 0;
+	text-align: left;
+
+        font-family: "Lucida Grande", Tahoma, Helvetica, sans-serif;
+        font-size: 14px;
+        color: #000000;
+background:  url(../images/body-bkgnd.jpg) fixed repeat center top ;
+background-size: cover;
+
+
+
+
+}
+#skipnav {
+ 	position: absolute;
+ 	left: -9000px;
+ 	width: 1px;
+ 	height: 1px;
+ 	overflow: hidden;
+}
+#skipnav:active, #skipnav:focus, #skipnav:hover { 
+ 	left: 0;
+ 	top: 0;
+ 	width: auto;
+ 	height: auto;
+ 	overflow: visible;
+ 	
+ 	padding: 10px;
+ 	border: 1px solid #666;
+ 	z-index: 90000;
+}
+form {
+	margin: 0;
+}
+fieldset {
+	padding: 0;
+	margin: 0;
+	border: none;
+}
+.inputfield {
+	height: 18px;
+	margin-top: 1px;
+	margin-right: 4px;
+	border: 1px solid #bfbfbf;
+}
+h1 {
+	font: normal 1.2em/1.2em "Myriad Pro",Georgia, "Times New Roman", Times, serif;
+	
+	margin-top: 0;
+	margin-bottom: 0em;
+}
+
+h2 {
+	clear: both;
+	width: 100%;  /* IE will insert too much space for top padding if we omit this */
+	font: normal 1.3em/1.3em "Myriad Pro", Trebuchet MS,Georgia, "Times New Roman", Times, serif;
+	
+/*	text-transform: uppercase;*/
+	padding-top: 21px;
+	margin-top: 0;
+	margin-bottom: 1em;
+	background: url(../images/h2-bkgnd.gif) no-repeat left top;
+}
+h2.top {
+	clear: none;
+	width: auto;  /* IE will not allow a floated div if we omit this */
+	padding-top: 0;
+	background: none;
+}
+h2.withtagline {
+	margin-bottom: 0.1em;
+}
+h3 {
+	clear: both;
+	font: normal 1.1em/1.1em "Myriad Pro",Trebuchet MS, Georgia, serif;
+	
+	margin-top: 0;
+	margin-bottom: 1em;
+}
+h4 {
+	/* clear: both; */
+	font-size: 1em;
+	margin-top: 0;
+	margin-bottom: 1.3em;
+}
+p {
+	/* clear: both; */
+	font-size: 1em;
+	margin-top: 0;
+	margin-bottom: 0.3em;
+}
+p.tagline {
+	clear: both;
+	font: italic 1.3em/1.3em "Myriad Pro",Georgia, "Times New Roman", Times, serif;
+	
+	margin-top: 0;
+	margin-bottom: 0.2em;
+}
+p.caption {
+	font: normal 0.9em/1.1em "Myriad Pro",Trebuchet MS, Arial, Helvetica, sans-serif;
+	
+	/* text-align: center; */
+	padding-top: 6px;
+	margin-bottom: 0;
+}
+ul, ol {
+	line-height: 1.3em;
+	margin-top: 0;
+	margin-bottom: 1.3em;
+}
+ul.spaced, ol.spaced {
+	line-height: 1.5em;
+}
+ul.indent {
+	padding-left: 3em;
+}
+ul {
+	list-style-image: url(../images/bullet-largegraysolid.gif);
+	list-style-type: none;
+}
+ul ul {
+	list-style-image: url(../images/bullet-largegrayhollow.gif);
+}
+ul ul ul {
+	list-style-image: url(../images/bullet-smallgray.gif);
+}
+ul ol {
+	list-style-image: none;
+	list-style-type: decimal;
+}
+ul ul, ul ol, ol ul, ol ol {
+	margin-bottom: 0.8em;
+}
+li {
+	margin-bottom: 5px;
+}
+li li {
+	margin-top: 0.8em;
+}
+ul.tight li {
+	margin-bottom: 0.3em;
+}
+li ul.tight li {
+	margin-top: 0.1em;
+	margin-bottom: 0.2em;
+}
+a {
+	
+	text-decoration: none;
+}
+a:visited {
+/*	color: #6B939B;*/
+	
+}
+a:hover {
+	
+	text-decoration: none;
+}
+sup {
+	vertical-align: baseline;
+	font-size: 0.8em;
+	position: relative;
+	top: -0.4em;
+}
+.hide {
+ 	position: absolute;
+ 	left: -9000px;
+ 	width: 1px;
+ 	height: 1px;
+ 	overflow: hidden;
+}
+img {
+	border-style: none;
+    border-color: inherit;
+    border-width: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+img.border {
+	border: 1px solid #bfbfbf;
+}
+
+
+#feed div
+ {
+    padding-left: 5px;
+}
+
+
+.floatleft {
+	clear: both;
+	float: left;
+	position: relative;
+	top: 3px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+}
+.floatright {
+	clear: both;
+	float: right;
+	position: relative;
+	top: 3px;
+	padding-left: 10px;
+	padding-bottom: 5px;
+}
+.box .floatleft {
+	padding-right: 10px;
+}
+.box .floatright {
+	padding-left: 10px;
+}
+.floatright p.image, .floatleft p.image {
+	margin-bottom: 0;
+}
+.clear {
+	clear: both;
+}
+.noclear {
+	clear: none;
+}
+.alert {
+	color: #f00;
+	font-weight: bold;
+}
+#contentMid
+{
+    width:1000px;
+    
+}
+/* ---------------------------------------------------- */
+/* CONTAINER
+/* ---------------------------------------------------- */
+
+#container {
+	position: relative;
+	text-align: left;
+	margin: 0 auto;
+	width: 944px;
+    top: 0px;
+    left: 0px;
+}
+
+/* ---------------------------------------------------- */
+/* BANNER
+/* ---------------------------------------------------- */
+
+#banner {
+	height: 104px;
+}
+#banner h2 {
+  
+    background-image: url(../images/header.png);
+  
+}
+#banner p {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 274px;
+	
+}
+#banner p span, #banner h2 span {
+ 	position: absolute;
+ 	left: -9000px;
+ 	width: 1px;
+ 	height: 1px;
+ 	overflow: hidden;
+}
+#banner p, #banner ul {
+	font: 0.9em/1.2em "Myriad Pro",Trebuchet MS, Arial, Helvetica, sans-serif;  
+	list-style-image: none;
+}
+#banner a {
+}
+#banner a:visited {
+}
+#banner a:hover {
+	text-decoration: underline;
+}
+#banner p a {
+	display: block;
+	width: 274px;
+	height: 30px;
+	background: transparent url(../images/banner-hhs.gif) no-repeat left top;
+}
+#banner p a:hover {
+	background: transparent url(../images/banner-hhs.gif) no-repeat 0 -30px;
+}
+#banner h2 {
+	position: relative;
+	top: 25px;
+	left: 0;
+	width: 944px;
+	height: 111px;
+	padding: 0;
+	margin: 0;
+}
+#banner h2 a {
+	display: block;
+	width: 370px;
+	height: 58px;
+	background-color: transparent;
+	background-image: url(../images/logo.bmp);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+}
+#banner p#tagline {
+	position: absolute;
+	top: 70px;
+	left: 0;
+	width: 223px;
+	height: 16px;
+	background: transparent url(../images/banner-tagline3.gif) no-repeat left top;
+	background-image: url(../images/banner-tagline3.gif);
+}
+#banner ul#utilities {
+	position: absolute;
+	top: 2px;  
+	right: 2px;	
+	text-align: right;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+#banner ul#utilities li {
+	display: inline;
+	padding: 0 0.8em 0 0.2em;
+	margin: 0;
+	background: none;
+	border-right: 1px solid #aaa;
+}
+#banner ul#utilities li.last {
+	padding-right: 0;
+	border-right: none;
+}
+
+
+/* ---------------------------------------------------- */
+/* CONTENT
+/* ---------------------------------------------------- */
+
+#content {
+	float: left;
+	width: 944px;
+	padding-top: 33px;
+	
+}
+* html #content {   /* IE6 fix */
+	float: none;
+	height: 328px;
+}
+h2.sectionheader {
+	width: 944px;
+	height: 60px;
+	padding: 0;
+	margin: 0;
+}
+h2.sectionheader span {
+ 	position: absolute;
+ 	left: -9000px;
+ 	width: 1px;
+ 	height: 1px;
+ 	overflow: hidden;
+}
+
+table h2 {
+	clear: none;
+	width: auto;  /* IE will not allow a floated div if we omit this */
+	padding-top: 4px;
+	margin-bottom: 4px;
+	background: none;
+}
+table h3 {
+	margin-bottom: 0;
+}
+table h4 {
+	margin-bottom: 0;
+}
+table td.indent {
+	padding-left: 20px;
+}
+
+
+#footer {
+	clear: both;
+	width: 944px;
+	font: 0.9em/1em Trebuchet MS, Arial, Helvetica, sans-serif;	
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin: 0 auto;	
+	/*background-color: #e8e7e3;*/
+}
+#footer h2 {
+ 	position: absolute;
+ 	left: -9000px;
+ 	width: 1px;
+ 	height: 1px;
+ 	overflow: hidden;
+}
+#footer p.address {
+	padding-top: 8px;
+}
+#footer ul {
+	list-style-image: none;
+	list-style-type: none;
+	padding: 0;
+	padding-bottom: 1.3em;
+	margin: 0;
+}
+#footer li {
+	display: inline;
+	padding: 0;
+	margin: 0;
+	background: none;
+}
+#footer li a {
+	padding-left: 0.4em;
+	padding-right: 0.8em;
+	margin: 1px;
+	border-right: 1px solid #c1c1c1;
+}
+#footer li.last a {
+	border-right: none;
+}
+#footer a {
+	color:#6E6E62;
+}
+#footer a:visited {
+	
+}
+#footer a:hover {
+	color:#262622;
+	text-decoration: underline;
+}
+
+.Headlinefixed{
+	
+	font-size:13px;
+	
+}
+
+//
+
+
+#myDIV {
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    background-color: blue;
+    color: white;
+    top: 0;
+    -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 5s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    50% {top: 100px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    50% {top: 100px;}
+}
+
+/* Blink for Webkit and others
+ * (Chrome, Safari, Firefox, IE, ...)
+ * */
+
+@-webkit-keyframes blinker {
+  from {opacity: 5.0;}
+  to {opacity: 0.5;}
+}
+.blink{
+	text-decoration: blink;
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: .7s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-direction: alternate;
+}
+
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}

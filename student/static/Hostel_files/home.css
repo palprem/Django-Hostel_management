@@ -1,0 +1,549 @@
+﻿
+
+h2 {
+	padding-top: 0;
+	margin-top: 0;
+	margin-bottom: 0.9em;
+	background: none;
+}
+h3 span {
+ 	position: absolute;
+ 	left: -9000px;
+ 	width: 1px;
+ 	height: 1px;
+ 	overflow: hidden;
+}
+p span, h2 span {
+ 	position: absolute;
+ 	left: -9000px;
+ 	width: 1px;
+ 	height: 1px;
+ 	overflow: hidden;
+}
+
+#feed {
+	//float: left;
+	//width: 291px;
+	line-height: 1.0em;
+	padding: 5px 5px 5px 5px;
+//	padding: 5px 18px 10px 19px;
+	margin-bottom: 10px;
+
+}
+#inthenews {
+	float: left;
+	width: 291px;
+	line-height: 1.0em;
+	min-height: 270px;
+	height: 270px;
+	padding: 5px 18px 10px 7px;
+//	padding: 5px 18px 10px 19px;
+	margin-bottom: 43px;
+
+}
+* html #inthenews {   /* IE6 fix */
+	height: 301px;
+}
+#inthenews h2 {
+	line-height: 1em;
+	margin-bottom: 0.8em;
+}
+#inthenews .newsitem {
+	clear: both;
+}
+#inthenews .image {
+	float: left;
+	width: 72px;
+	margin-top: 3px;
+	margin-bottom: 7px;
+}
+#inthenews .description {
+	float: left;
+	width: 285px;
+	font: 0.95em/.9em "Myriad Pro",Trebuchet MS, Arial, Helvetica, sans-serif;
+/*	font: 1.0em/.9em "Myriad Pro",Trebuchet MS, Arial, Helvetica, sans-serif;*/
+	margin-left: 1px;
+	line-height: 1.1em;
+}
+#inthenews .date {
+	float: left;
+	width: 208px;
+	font: italic 0.9em/1.2em "Myriad Pro",Trebuchet MS, Arial, Helvetica, sans-serif;
+	color: #64676a;
+	padding-top: 0.1em;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+#inthenews ul {
+	clear: both;
+	padding: 0;
+	padding-top: 1px;
+	margin: 0;
+	list-style-image: none;
+	list-style-type: none;
+}
+#inthenews li {
+	float: left;
+	margin: 0;
+	background: none;
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 0;
+	width: 135px;
+	height: auto;
+}
+#inthenews li.last {     
+	padding-right: 0;
+	border-right: none;
+}
+#inthenews li a {
+	display: block;
+	height: 20px;
+}
+#inthenews li a.press {
+	padding-left: 5px;
+	background-color: #2E6FA7;
+	background-image: none;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+#inthenews li a.rss {
+	padding-left: 23px;
+	background: transparent url(../images/icon-rss.gif) no-repeat left top;
+}
+#inthenews li a.multimedia {
+	padding-left: 23px;
+	background: transparent url(../images/icon-multimedia.gif) no-repeat left top;
+}
+* html #inthenews li a.press {   /* IE6 fix */
+	width: 16em;
+}
+* html #inthenews li a.rss {   /* IE6 fix */
+	width: 10em;
+}
+* html #inthenews li a.multimedia {   /* IE6 fix */
+	width: 5.3em;
+}
+
+
+#tabbedfeatures {
+	/* clear: both; */ /* COMMENTED OUT BY RJB 2-16-12 */
+	float: left;
+	width: 596px;
+	/* min-height: 262px; */
+	padding-left: 20px;
+    	padding-top: 10px;
+	padding-bottom: 25px;
+	background: #fff url(../images/tabbedfeatures-shadow.jpg) no-repeat 20px bottom;
+}
+#tabbedfeatures ul.tabs {
+	height: 36px;
+	padding: 0;
+	margin: 0;
+	list-style-image: none;
+	list-style-type: none;
+}
+#tabbedfeatures ul.tabs li {
+	position: relative;
+	float: left;
+	padding: 0;
+	margin: 0;
+	background: none;
+}
+#tabbedfeatures ul.tabs li a {
+	display: block;
+	height: 36px;
+}
+#tabbedfeatures ul.tabs li a span {
+ 	position: absolute;
+ 	left: -9000px;
+ 	width: 1px;
+ 	height: 1px;
+ 	overflow: hidden;
+}
+#tabbedfeatures #glancetab a {
+	width: 148px;
+	background-color: transparent;
+	background-image: url(../images/tabbedfeatures.gif);
+	background-repeat: no-repeat;
+	background-position: 0 6px;
+}
+#tabbedfeatures #glancetab a:hover {
+	background: transparent url(../images/tabbedfeatures.gif) no-repeat 0 -30px;
+}
+#tabbedfeatures #glancetab a.current {
+	background: transparent url(../images/tabbedfeatures.gif) no-repeat 0 -66px;
+}
+#tabbedfeatures #fundingtab a {
+	width: 185px;
+	background: transparent url(../images/tabbedfeatures.gif) no-repeat -148px 6px;
+}
+#tabbedfeatures #fundingtab a:hover {
+	background: transparent url(../images/tabbedfeatures.gif) no-repeat -148px -30px;
+}
+#tabbedfeatures #fundingtab a.current {
+	background: transparent url(../images/tabbedfeatures.gif) no-repeat -148px -66px;
+}
+#tabbedfeatures #labstab a {
+	width: 120px;
+	background: transparent url(../images/tabbedfeatures.gif) no-repeat -333px 6px;
+}
+#tabbedfeatures #labstab a:hover {
+	background: transparent url(../images/tabbedfeatures.gif) no-repeat -333px -30px;
+}
+#tabbedfeatures #labstab a.current {
+	background: transparent url(../images/tabbedfeatures.gif) no-repeat -333px -66px;
+}
+#tabbedfeatures #trainingtab a {
+	width: 143px;
+	background: transparent url(../images/tabbedfeatures.gif) no-repeat -453px 6px;
+}
+#tabbedfeatures #trainingtab a:hover {
+	background: transparent url(../images/tabbedfeatures.gif) no-repeat -453px -30px;
+}
+#tabbedfeatures #trainingtab a.current {
+	background: transparent url(../images/tabbedfeatures.gif) no-repeat -453px -66px;
+}
+/* Active tab uses the class name "current." Its highlight is also done by moving the background image. */
+#tabbedfeatures ul.tabs a.current, ul.tabs a.current:hover, ul.tabs li.current a {
+	cursor: default; 
+}
+#tabbedfeatures .panes {
+	clear: both;
+	float: left;
+	width: 594px;
+	border: 1px solid #bababa;
+	border-top: 0;
+}
+/* Initially all panes are hidden except glancepane -- we want that one to show when JavaScript is disabled */ 
+#tabbedfeatures .panes .pane {
+	display: none;		
+}
+#tabbedfeatures .panes #glancepane {
+	display: block;		
+}
+#tabbedfeatures .panes div {
+	float: left;
+	width: 557px;
+	display: none;
+	padding: 17px 18px 0 19px;
+	height: 190px;
+}
+#tabbedfeatures .panes #glancepane {
+	background-color: transparent; 
+	background-image: url(../images/gatenew.jpg); 
+	opacity:1;
+	filter:alpha(opacity=100); /* For IE8 and earlier */
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#tabbedfeatures .panes #fundingpane {
+	background: transparent url(../images/Computer.gif) no-repeat left bottom;
+}
+#tabbedfeatures .panes #labspane1 {
+	background: transparent url(../images/Mechanical.gif) no-repeat left bottom;
+}
+#tabbedfeatures .panes #labspane {
+	background: transparent url(../images/Mechanical.gif) no-repeat left bottom;
+}
+#tabbedfeatures .panes #trainingpane {
+	background: transparent url(../images/Mechanical.gif) no-repeat left bottom;
+}
+
+#tabbedfeatures .panes div p {
+	margin-bottom: 0.7em;
+ 	font: normal 1.0em/1.5em "Myriad Pro",Trebuchet MS, Arial, Helvetica, sans-serif;
+ 	color: #3B636B;
+	text-shadow: 2px 2px 2px #000000;
+}
+#tabbedfeatures .panes div p {
+	
+ 	font: normal 1.1em/1.4em "Myriad Pro",Trebuchet MS, Arial, Helvetica, sans-serif;
+	font-weight : bold;
+ 	color: #FFFF55;
+ 	text-align:justify;
+	
+}
+#tabbedfeatures .panes div#fundingpane p {
+	clear: both;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 0.4em;
+}
+#tabbedfeatures .panes div#fundingpane form {
+	clear: both;
+	float: left;
+	padding-top: 1em;
+	width: 260px;
+}
+#tabbedfeatures .panes div .searchbox {
+	width: 200px;
+	height: 18px;
+	margin-top: 1px;
+	margin-right: 4px;
+	border: 1px solid #bfbfbf;
+}
+#tabbedfeatures .panes div input {
+	float: left;
+	position: relative;
+	top: -0.2em;
+}
+#tabbedfeatures .panes div ul {
+	clear: both;
+	float: left;
+	width: 557px;
+	padding: 0;
+	margin: 0;
+	list-style-image: none;
+	list-style-type: none;
+}
+#tabbedfeatures .panes div#fundingpane ul {
+	padding-bottom: 0;
+}
+#tabbedfeatures .panes div li {
+	float: left;
+	padding: 0 0.8em 0 0;
+	margin: 0 0.8em 0 0;
+	background: none;
+	border-right: 1px solid #bbb;
+}
+#tabbedfeatures .panes div li.last {     
+	border-right: none;
+}
+#tabbedfeatures .searchfundingopps legend {
+ 	position: absolute;
+ 	left: -9000px;
+ 	width: 1px;
+ 	height: 1px;
+ 	overflow: hidden;
+}
+
+
+#tuvc {
+	float: left;
+	width: 300px;
+	height: 247px; 
+	padding: 0 0 0 0px;
+	
+}
+#tuvc h2 {
+	line-height: 1em;
+	margin-bottom: 0.1em;
+}
+#tuvc .image {
+	float: left;
+	width: 300px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+#tuvc .description {
+	float: left;
+	width: 300px;
+	margin-left: 15px;
+	margin-bottom: 0;
+}
+#tuvc ul {
+	padding: 0;
+	margin: 0;
+	list-style-image: none;
+	list-style-type: none;
+}
+#tuvc ul li {
+	line-height: 1.1em;
+	padding: 0;
+	padding-bottom: 0.8em;
+	margin: 0;
+	background: none;
+}
+#tuvc a.more {
+	position: relative;
+	left: -1px;
+	display: block;
+	width: 56px; /* UPDATED BY RJB 2-14-12 */
+	height: 24px;
+	margin-top: 4px;
+	background: transparent url(../images/button-more-brown.gif) no-repeat left top;
+	-webkit-box-shadow: 1px 1px 5px rgba(0,0,0,0.2); /* ADDED BY RJB 2-14-12 */
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.2); /* ADDED BY RJB 2-14-12 */
+}
+#tuvc a.more span {
+ 	position: absolute;
+ 	left: -9000px;
+ 	width: 1px;
+ 	height: 1px;
+ 	overflow: hidden;
+}
+
+
+#minifeatures {
+	/* clear: both; */ /* COMMENTED OUT BY RJB 2-16-12 */
+	float: left;
+	width: 944px;
+	/* height: 258px; */
+	padding-top: 20px;
+	padding-bottom: 25px;
+	
+}
+#minifeatures h2 {
+ 	position: absolute;
+ 	left: -9000px;
+ 	width: 1px;
+ 	height: 1px;
+ 	overflow: hidden;
+}
+#minifeatures .minifeatureitem {
+	float: left;
+	width: 288px;
+	padding-left: 20px;
+}
+#minifeatures .minifeatureitem h3 {
+	line-height: 1.4em;
+	padding-top: 6px;
+	padding-bottom: 1em;
+	margin-bottom: 0.2em;
+	background: url(../images/h3-minifeatures-bkgnd.gif) no-repeat left bottom;
+}
+#minifeatures .image {
+	float: left;
+	width: 72px;
+	padding-bottom: 10px;
+	margin-top: 3px;
+}
+#minifeatures .description {
+	float: left;
+	width: 206px;
+	margin-left: 10px;
+	margin-bottom: 5px;
+	font: 1.0em/1.2em "Myriad Pro",Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+#minifeatures ul {
+	padding-left: 18px;
+	margin: 0;
+	list-style-image: url(../images/arrow.gif);
+}
+#minifeatures li {
+	margin-bottom: 0.3em;
+	font: 1.0em/1.2em "Myriad Pro",Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+
+#minifeatures1 {
+        /* clear: both; */ /* COMMENTED OUT BY RJB 2-16-12 */
+        float: left;
+        width: 944px;
+        /* height: 258px; */
+        padding-top: 9px;
+        padding-bottom: 25px;
+        background-color: #d7e3f6;
+        
+}
+#minifeatures1 h2 {
+        position: absolute;
+        left: -9000px;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+       
+}
+#minifeatures1 .minifeatureitem1 {
+        float: left;
+        width: 288px;
+        padding-left: 20px;
+        
+}
+#minifeatures1 .minifeatureitem1 h3 {
+        line-height: 1.4em;
+        padding-top: 6px;
+        padding-bottom: 0em;
+        margin-bottom: 0.2em;
+       
+        font-weight:bold;
+}
+#minifeatures1 .image 
+{
+        float: left;
+        width: 72px;
+        padding-bottom: 10px;
+        margin-top: 3px;
+}
+#minifeatures1 .description {
+        float: left;
+        width: 206px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+}
+#minifeatures1 ul {
+padding-left: 18px;
+margin: 0;
+
+list-style-image: url(../images/arrow.gif);
+}
+#minifeatures1 li {
+        margin-bottom: 0.3em;
+	font: bold 1.0em/1.2em "Myriad Pro",Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+#minifeatures1 a {
+        margin-bottom: 0.3em;
+}
+
+
+#minifeatures2 {
+        /* For Strip for Internation Office Line : Dhiraj */
+        float: left;
+        width: 100%;
+        /* height: 258px; */
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background-color:#eeeeee;
+        
+}
+#minifeatures2 h2 {
+        position: absolute;
+        left: -9000px;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+       
+}
+#minifeatures2 .minifeatureitem2 {
+        float: left;
+        width: 288px;
+        padding-left: 20px;
+        
+}
+#minifeatures2 .minifeatureitem2 h3 {
+        line-height: 1.4em;
+        padding-top: 6px;
+        padding-bottom: 0em;
+        margin-bottom: 0.2em;
+       
+        font-weight:bold;
+}
+#minifeatures2 .image 
+{
+        float: left;
+        width: 72px;
+        padding-bottom: 10px;
+        margin-top: 3px;
+}
+#minifeatures2 .description {
+        float: left;
+        width: 206px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+}
+#minifeatures2 ul {
+padding-left: 18px;
+margin: 0;
+
+list-style-image: url(../images/arrow.gif);
+}
+#minifeatures2 li {
+        margin-bottom: 0.3em;
+	font: bold 1.0em/1.2em "Myriad Pro",Trebuchet MS, Arial, Helvetica, sans-serif;
+}
+#minifeatures2 a {
+        margin-bottom: 0.3em;
+}

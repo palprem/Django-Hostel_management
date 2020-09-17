@@ -1,0 +1,324 @@
+
+
+body{
+	margin: 0px;
+font-family: "Lucida Grande", Tahoma, Helvetica, sans-serif;
+//font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #fff;
+	background-color:#B3B3B3;
+}
+
+#tabbedfeatures {
+	/* clear: both; */ /* COMMENTED OUT BY RJB 2-16-12 */
+	float: left;
+	width: 596px;
+	/* min-height: 262px; */
+	padding-left: 20px;
+	padding-bottom: 9px;
+	background: #000 url(../images/tabbedfeatures-shadow.jpg) no-repeat 20px bottom;
+
+}
+#tabbedfeatures .panes #labspane {
+	background: #000;
+}
+#tabbedfeatures .panes #trainingpane {
+	background: #000;
+}
+div#wrapbg{
+	background: url(../images/background_red.gif);
+	background-repeat: repeat-x;
+	width: 1004px;
+	
+}
+.clr{
+	clear: both;
+}
+#content
+{
+    background-color:#000;
+}
+#widthcontent
+{
+   width:1000px; 
+   text-align:center;
+   
+}
+/* JOOMLA DEFAULT STYLE
+--------------------------------------------------------- */
+a:link, a:visited{
+	color: #fff;
+	text-decoration: none;
+}
+a:hover{
+	color: #fff;
+	text-decoration: underline;
+}
+ul {
+	margin: 0px;
+	margin-left: 15px;
+	padding: 0px;
+}
+ul a:link, ul a:visited{
+	color: #fff;
+	text-decoration: none;
+}
+ul a:hover{
+	color: #fff;
+	text-decoration: underline;
+}
+
+a img{
+	border: none;
+}
+.contentheading {
+	font-family: Tahoma, Helvetica, sans-serif;
+	font-size: 1.33em;
+	font-weight: bold;
+	color: #fff;
+}
+.contentheading a:link, .contentheading a:visited {
+	font-family: Tahoma, Helvetica, sans-serif;
+	font-size: 1.33em;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+.contentheading a:hover {
+	color: #fff;
+	text-decoration: underline;
+}
+.modifydate{
+	font-family: Tahoma, Helvetica, sans-serif;
+	font-size: 0.83em;
+	color: #cbcbcb;
+	padding-top: 15px;
+}
+.small{
+	font-family: Tahoma, Helvetica, sans-serif;
+	font-size: 0.83em;
+	color: #cbcbcb;
+}
+.createdate{
+	font-family: Tahoma, Helvetica, sans-serif;
+	color: #cbcbcb;
+}
+td .createdate{
+	font-size: 0.83em;
+}
+.readon{
+	font-family: Tahoma, Helvetica, sans-serif;
+	font-size: 0.92em;
+	color: #fff;
+}
+a.readon:link, a.readon:visited {
+	text-decoration: none;
+}
+a.readon:hover {
+	text-decoration: underline;
+}
+td.buttonheading {
+	width: 32px;
+}
+.sectiontableheader {
+	background-color : #efefef;
+	background-repeat: repeat;
+	border-bottom: solid 1px #999999;
+	padding: 2px;
+	color : #555555;
+	font-weight : bold;
+	padding: 2px;
+}
+.sectiontableentry2 {
+	background-color : #F3F3F3;
+}
+.mosimage_caption{
+	font-family: Tahoma, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #cbcbcb;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.componentheading {
+	font-family: Tahoma, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	color: #cbcbcb;
+	text-align: left;
+	margin-bottom: 20px;
+}
+table.contenttoc {
+	margin: 0 0 10px 10px;
+	padding: 0;
+	width: 200px;
+}
+table.contenttoc td {
+	padding: 1px 5px 1px 18px;
+}
+table.contenttoc th {
+	padding: 2px 4px;
+	background-color : #efefef;
+	border-bottom: solid 1px #999999;
+	color: #888888;
+	text-indent: 5px;
+	text-transform: UPPERCASE;
+}
+table.blog, table.contentpaneopen{
+	width: auto;
+}
+table.contentpane{
+	width: 100%;
+	margin-bottom: 30px;
+	text-align: left;
+}
+.highlight{
+	background-color: #ffff99;
+}
+.contentpane{
+	width: auto;
+}
+table.poll {
+	padding: 0;
+	width: 100%;
+	border-collapse: collapse;
+}
+table.pollstableborder {
+	padding: 0;
+	width: 100%;
+	border: none;
+	text-align: left;
+}
+table.pollstableborder img {
+	vertical-align: baseline;
+}
+table.pollstableborder td {
+	padding: 2px!important;
+}
+.pagenav {
+	padding: 2px;
+}
+a.pagenav,
+.pagenav_prev a,
+.pagenav_next a,
+.pagenavbar a {
+	padding: 1px 4px;
+	border-top: 1px solid #E1E1E1;
+	border-left: 1px solid #E1E1E1;
+	border-bottom: 1px solid #BABDB6;
+	border-right: 1px solid #BABDB6;
+	background: #EFEFEF;
+	color: #666666;
+	text-decoration: none;
+	font-size: 11px;
+}
+a.pagenav:hover, a.pagenav:active,
+.pagenav_prev a:hover, .pagenav_prev a:active,
+.pagenav_next a:hover, .pagenav_next a:active,
+.pagenavbar a:hover, .pagenavbar a:active {
+	padding: 1px 4px;
+	border-top: 1px solid #BABDB6;
+	border-right: 1px solid #E1E1E1;
+	border-bottom: 1px solid #E1E1E1;
+	border-left: 1px solid #BABDB6;
+	background: #EFEFEF;
+	color: #666666;
+	text-decoration: none;
+}
+.pagenavbar {
+	padding-left: 14px;
+	color: #666666;
+	font-size: 11px;
+}
+.pagenavcounter {
+	padding: 8px 14px 0 14px;
+	color: #666666;
+}
+.blog_more {
+	margin-top: 5px;
+	margin-bottom: 30px;
+}
+.back_button{
+	font-size: 11px;
+}
+.adminform textarea {
+	width: 840px!important;
+}
+
+.adminform textarea.inputbox {
+	width: 840px!important;
+}
+
+
+/* LAYOUT STYLING
+--------------------------------------------------------- */
+div#wrapper{
+	width: 700px;
+}
+
+
+/* MOO.FX
+--------------------------------------------------------- */
+div#toolsdiv{
+	width: 1004px;
+	color: #fff;
+	font-size: 11px;
+	background-color: #fff;
+}
+div#tools{
+	width: 711px;
+	height: 40px;
+	padding-top: 5px;
+}
+/* ------------------------------------ */
+div#syndicatediv{
+	float: left;
+	width: 229px;
+}
+div#colorsdiv{
+	float: left;
+	width: 256px;
+}
+div#fontsdiv{
+	float: left;
+	width: 226px;
+}
+
+
+/* WEBSITE TOOLS
+--------------------------------------------------------- */
+div#sitetoolsdiv{
+	height: 32px;
+}
+div#sitetools{
+	width: 164px;
+	height: 32px;
+	float: right;
+	background: url(../images/tools_label.gif);
+	font-family:  Tahoma, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #FFFFFF;
+	line-height: 3.5em;
+	text-align: center;
+	text-transform: uppercase;
+}
+div#sitetools a:link, div#sitetools a:visited{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+div#sitetools a:hover{
+	color: #fff;
+}
+
+
+/* TOP AREA
+--------------------------------------------------------- */
+
+/*Photo Page Css*/
+.textfix{ /*hover state CSS*/
+font-size:13px;
+background-color:#AB0F5D;
+}
+.textfix1{ /*hover state CSS*/
+
+background-color:#AB0F5D;
+}
